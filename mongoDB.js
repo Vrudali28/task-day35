@@ -26,6 +26,7 @@ db.products.find().projection({ product_name:1 , product_material:1})
 
 9: Find products which contains product color indigo and product price 492.00.
    db.products.find({ product_color:"indigo" , product_price: 492})
+   
 10: Delete the products which product price value are same.
 Solution:
 db.products.deleteMany({
